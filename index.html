@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NovaTech Solutions | Desarrollo web, nube y ciberseguridad</title>
-  <meta name="description" content="NovaTech Solutions (proyecto de portafolio): desarrollo de software, soluciones en la nube y ciberseguridad explicados de forma clara para pequeñas y medianas empresas.">
+  <meta name="description" content="NovaTech Solutions (proyecto de portafolio): desarrollo web, soluciones en la nube y ciberseguridad explicados de forma clara para pequeñas y medianas empresas.">
   <meta name="theme-color" content="#0B1220">
   <meta name="color-scheme" content="dark">
   <link rel="canonical" href="https://jhairceli9-crypto.github.io/novatech-solutions/">
@@ -12,7 +12,7 @@
   <!-- Vista previa al compartir el enlace (WhatsApp, redes sociales) -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="NovaTech Solutions">
-  <meta property="og:description" content="Sitio web de portafolio: desarrollo de software, nube y ciberseguridad para empresas.">
+  <meta property="og:description" content="Proyecto de portafolio: sitio web de una empresa ficticia de desarrollo web, nube y ciberseguridad.">
   <meta property="og:url" content="https://jhairceli9-crypto.github.io/novatech-solutions/">
   <meta property="og:locale" content="es_EC">
 
@@ -49,7 +49,8 @@
         <ul class="nav__list">
           <li><a href="#inicio" class="nav__link">Inicio</a></li>
           <li><a href="#servicios" class="nav__link">Servicios</a></li>
-          <li><a href="#nosotros" class="nav__link">Cómo trabajamos</a></li>
+          <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+          <li><a href="#proceso" class="nav__link">Proceso</a></li>
           <li><a href="#contacto" class="nav__link">Contacto</a></li>
         </ul>
         <a href="#contacto" class="btn btn--primary btn--sm nav__cta">Hablemos</a>
@@ -65,10 +66,10 @@
         <div class="hero__content">
           <p class="badge reveal"><span class="badge__dot" aria-hidden="true"></span>Software · Nube · Ciberseguridad</p>
           <h1 class="hero__title reveal" id="hero-title">Tecnología clara para que tu empresa <span class="accent">crezca sin complicaciones</span></h1>
-          <p class="hero__text reveal">Creamos sitios y aplicaciones web, ordenamos tu información en la nube y te ayudamos a protegerla. Te explicamos cada paso en un lenguaje sencillo, sin tecnicismos innecesarios.</p>
+          <p class="hero__text reveal">Diseñamos sitios web que tus clientes entienden, ordenamos tu información en la nube y te ayudamos a protegerla. Cada decisión te la explicamos en lenguaje sencillo, para que siempre sepas en qué inviertes.</p>
           <div class="hero__actions reveal">
             <a href="#contacto" class="btn btn--primary btn--lg">Cuéntanos tu proyecto <svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-4 4 4-4 4"/></svg></a>
-            <a href="#servicios" class="btn btn--ghost btn--lg">Ver servicios</a>
+            <a href="#proyectos" class="btn btn--ghost btn--lg">Ver proyectos de ejemplo</a>
           </div>
           <ul class="hero__points reveal" aria-label="Lo que ofrecemos">
             <li>Diseño adaptado a celulares</li>
@@ -111,61 +112,168 @@
         <header class="section__head reveal">
           <p class="eyebrow">Servicios</p>
           <h2 class="section__title" id="servicios-title">Tres formas de impulsar tu negocio</h2>
-          <p class="section__text">Elige el servicio que necesitas hoy. Si no estás seguro, te ayudamos a decidir en una conversación inicial.</p>
+          <p class="section__text">Elige el servicio que necesitas hoy. Si no estás seguro, te ayudamos a decidir en una primera conversación.</p>
         </header>
 
         <div class="cards">
-          <article class="card reveal">
+          <article class="card reveal" id="servicio-web">
             <div class="card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 5l-3 14"/></svg>
             </div>
             <h3 class="card__title">Desarrollo web y de software</h3>
-            <p class="card__text">Sitios web y aplicaciones que se ven bien en cualquier pantalla y son fáciles de usar para tus clientes.</p>
+            <p class="card__text">Sitios y aplicaciones rápidos, fáciles de usar y pensados para que tus clientes encuentren lo que buscan en pocos clics.</p>
+            <p class="card__ideal"><strong>Ideal si</strong> aún no tienes página web o la que tienes no se ve bien en el celular.</p>
             <ul class="card__list">
-              <li>Páginas web corporativas y tiendas</li>
+              <li>Páginas corporativas y catálogos</li>
               <li>Sistemas internos a la medida</li>
               <li>Diseño responsive y accesible</li>
             </ul>
-            <a href="#contacto" class="card__link" data-service="Desarrollo web y de software">Consultar este servicio <span aria-hidden="true">→</span></a>
+            <a href="#contacto" class="card__link" data-service="Desarrollo web y de software">Consultar <span class="sr-only">sobre desarrollo web y de software</span><span aria-hidden="true">→</span></a>
           </article>
 
-          <article class="card reveal">
+          <article class="card reveal" id="servicio-nube">
             <div class="card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .6-7.96A6 6 0 0 0 6.1 9.2 4.4 4.4 0 0 0 7 18z"/></svg>
             </div>
             <h3 class="card__title">Soluciones en la nube</h3>
-            <p class="card__text">Lleva tus archivos y sistemas a la nube para trabajar desde cualquier lugar sin perder información.</p>
+            <p class="card__text">Lleva tus archivos y sistemas a la nube para trabajar desde cualquier lugar y dejar de depender de una sola computadora.</p>
+            <p class="card__ideal"><strong>Ideal si</strong> tu información está repartida en memorias USB, correos y equipos distintos.</p>
             <ul class="card__list">
-              <li>Migración de datos y servidores</li>
+              <li>Migración de archivos y servidores</li>
               <li>Copias de seguridad automáticas</li>
               <li>Correo y herramientas colaborativas</li>
             </ul>
-            <a href="#contacto" class="card__link" data-service="Soluciones en la nube">Consultar este servicio <span aria-hidden="true">→</span></a>
+            <a href="#contacto" class="card__link" data-service="Soluciones en la nube">Consultar <span class="sr-only">sobre soluciones en la nube</span><span aria-hidden="true">→</span></a>
           </article>
 
-          <article class="card reveal">
+          <article class="card reveal" id="servicio-seguridad">
             <div class="card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
             </div>
             <h3 class="card__title">Ciberseguridad</h3>
-            <p class="card__text">Revisamos los puntos débiles de tu red y enseñamos a tu equipo a evitar los riesgos más comunes.</p>
+            <p class="card__text">Revisamos los puntos débiles de tu red y enseñamos a tu equipo a reconocer los fraudes y riesgos más comunes.</p>
+            <p class="card__ideal"><strong>Ideal si</strong> todos usan la misma contraseña o nunca han revisado quién accede a qué.</p>
             <ul class="card__list">
               <li>Revisión de seguridad de la red</li>
               <li>Contraseñas y accesos seguros</li>
               <li>Capacitación contra fraudes en línea</li>
             </ul>
-            <a href="#contacto" class="card__link" data-service="Ciberseguridad">Consultar este servicio <span aria-hidden="true">→</span></a>
+            <a href="#contacto" class="card__link" data-service="Ciberseguridad">Consultar <span class="sr-only">sobre ciberseguridad</span><span aria-hidden="true">→</span></a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== Cómo trabajamos ===== -->
-    <section class="section section--alt" id="nosotros" aria-labelledby="nosotros-title">
+    <!-- ===== Proyectos (demostraciones) ===== -->
+    <section class="section section--alt" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Proyectos</p>
+          <h2 class="section__title" id="proyectos-title">Ejemplos de lo que podemos construir</h2>
+          <p class="section__text">Proyectos de <strong>demostración</strong> creados para mostrar el tipo de trabajo que hacemos. No corresponden a clientes reales.</p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filtrar proyectos por categoría">
+          <button type="button" class="filter is-active" data-filter="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
+          <button type="button" class="filter" data-filter="nube" aria-pressed="false">Nube</button>
+          <button type="button" class="filter" data-filter="seguridad" aria-pressed="false">Seguridad</button>
+        </div>
+        <p class="sr-only" id="filterStatus" role="status" aria-live="polite"></p>
+
+        <ul class="projects">
+          <!-- Proyecto real: este mismo sitio -->
+          <li class="project reveal" data-category="web">
+            <div class="project__visual project__visual--site" aria-hidden="true">
+              <div class="mock-browser">
+                <div class="mock-browser__bar"><i></i><i></i><i></i></div>
+                <div class="mock-site">
+                  <span class="mock-site__nav"></span>
+                  <span class="mock-site__title"></span>
+                  <span class="mock-site__line"></span>
+                  <span class="mock-site__btn"></span>
+                  <div class="mock-site__cards"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project__body">
+              <span class="tag tag--real">Proyecto real</span>
+              <h3 class="project__title">NovaTech Solutions (este sitio)</h3>
+              <p class="project__text">Sitio web de una empresa ficticia, hecho a mano con HTML, CSS y JavaScript. Incluye menú móvil accesible, diseño responsive y formulario con validación.</p>
+              <ul class="project__stack" aria-label="Tecnologías">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>GitHub Pages</li>
+              </ul>
+              <a class="project__link" href="https://github.com/jhairceli9-crypto/novatech-solutions" target="_blank" rel="noopener">
+                Ver el código en GitHub <span class="sr-only">(se abre en una pestaña nueva)</span><span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="project reveal" data-category="web">
+            <div class="project__visual project__visual--shop" aria-hidden="true">
+              <div class="mock-phone">
+                <span class="mock-phone__hero"></span>
+                <div class="mock-phone__grid"><span></span><span></span><span></span><span></span></div>
+                <span class="mock-phone__btn"></span>
+              </div>
+            </div>
+            <div class="project__body">
+              <span class="tag">Demostración</span>
+              <h3 class="project__title">Catálogo en línea para una cafetería</h3>
+              <p class="project__text"><strong>Reto:</strong> mostrar el menú y recibir pedidos desde el celular. <strong>Propuesta:</strong> catálogo con categorías, carrito sencillo y botón para enviar el pedido.</p>
+              <ul class="project__stack" aria-label="Tecnologías">
+                <li>HTML5</li><li>CSS Grid</li><li>JavaScript</li>
+              </ul>
+              <a class="project__link" href="#contacto" data-service="Desarrollo web y de software">Quiero algo así <span class="sr-only">: catálogo en línea</span><span aria-hidden="true">→</span></a>
+            </div>
+          </li>
+
+          <li class="project reveal" data-category="nube">
+            <div class="project__visual project__visual--cloud" aria-hidden="true">
+              <div class="mock-panel">
+                <div class="mock-panel__row"><span></span><b style="--w: 82%"></b></div>
+                <div class="mock-panel__row"><span></span><b style="--w: 64%"></b></div>
+                <div class="mock-panel__row"><span></span><b style="--w: 91%"></b></div>
+                <div class="mock-panel__row"><span></span><b style="--w: 47%"></b></div>
+              </div>
+            </div>
+            <div class="project__body">
+              <span class="tag">Demostración</span>
+              <h3 class="project__title">Panel de copias de seguridad</h3>
+              <p class="project__text"><strong>Reto:</strong> saber si los archivos de la oficina están respaldados. <strong>Propuesta:</strong> panel que muestra el estado de cada copia y avisa cuando una falla.</p>
+              <ul class="project__stack" aria-label="Tecnologías">
+                <li>Nube</li><li>Automatización</li><li>Panel web</li>
+              </ul>
+              <a class="project__link" href="#contacto" data-service="Soluciones en la nube">Quiero algo así <span class="sr-only">: panel de copias de seguridad</span><span aria-hidden="true">→</span></a>
+            </div>
+          </li>
+
+          <li class="project reveal" data-category="seguridad">
+            <div class="project__visual project__visual--security" aria-hidden="true">
+              <div class="mock-check">
+                <span class="is-done"></span><span class="is-done"></span><span class="is-done"></span><span></span>
+              </div>
+            </div>
+            <div class="project__body">
+              <span class="tag">Demostración</span>
+              <h3 class="project__title">Guía de seguridad para equipos pequeños</h3>
+              <p class="project__text"><strong>Reto:</strong> que un equipo sin área de sistemas trabaje de forma segura. <strong>Propuesta:</strong> lista de verificación interactiva con contraseñas, accesos y copias.</p>
+              <ul class="project__stack" aria-label="Temas">
+                <li>Contraseñas</li><li>Accesos</li><li>Capacitación</li>
+              </ul>
+              <a class="project__link" href="#contacto" data-service="Ciberseguridad">Quiero algo así <span class="sr-only">: guía de seguridad</span><span aria-hidden="true">→</span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Proceso ===== -->
+    <section class="section" id="proceso" aria-labelledby="proceso-title">
       <div class="container about">
         <div class="about__content reveal">
           <p class="eyebrow">Cómo trabajamos</p>
-          <h2 class="section__title" id="nosotros-title">Un proceso simple, sin sorpresas</h2>
+          <h2 class="section__title" id="proceso-title">Un proceso simple, sin sorpresas</h2>
           <p class="section__text">Creemos que la tecnología debe entenderse. Por eso trabajamos por etapas cortas: siempre sabrás qué se está haciendo y por qué.</p>
           <ul class="checklist">
             <li>Te explicamos las opciones antes de empezar</li>
@@ -209,11 +317,11 @@
         <div class="cta-band__box reveal">
           <div>
             <h2 class="cta-band__title" id="cta-title">¿Tienes una idea en mente?</h2>
-            <p>Cuéntanos qué necesitas y te ayudamos a convertirla en un plan concreto.</p>
+            <p>Cuéntanos qué necesitas y te ayudamos a convertirla en un plan concreto, por etapas y sin tecnicismos.</p>
           </div>
           <div class="cta-band__actions">
             <a href="#contacto" class="btn btn--light btn--lg">Empezar conversación</a>
-            <a href="https://github.com/jhairceli9-crypto/novatech-solutions" class="btn btn--outline-light btn--lg" target="_blank" rel="noopener">Ver código en GitHub</a>
+            <a href="https://github.com/jhairceli9-crypto/novatech-solutions" class="btn btn--outline-light btn--lg" target="_blank" rel="noopener">Ver código en GitHub <span class="sr-only">(se abre en una pestaña nueva)</span><span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </div>
@@ -225,51 +333,74 @@
         <div class="contact__info reveal">
           <p class="eyebrow">Contacto</p>
           <h2 class="section__title" id="contacto-title">Cuéntanos tu proyecto</h2>
-          <p class="section__text">Escríbenos qué necesitas: un sitio web, mover tu información a la nube o revisar la seguridad de tu empresa.</p>
+          <p class="section__text">Mientras más claro sea tu mensaje, mejor podremos orientarte. Te sugerimos incluir:</p>
+
+          <ol class="contact__tips">
+            <li><strong>A qué se dedica tu negocio</strong> y quiénes son tus clientes.</li>
+            <li><strong>Qué problema quieres resolver</strong> o qué te gustaría lograr.</li>
+            <li><strong>Para cuándo lo necesitas</strong>, aunque sea una fecha aproximada.</li>
+          </ol>
+
           <ul class="contact__list">
             <li>
               <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
-              <span><span class="contact__label">Correo (ejemplo)</span>hola@novatech.example</span>
+              <span><span class="contact__label">Correo (dirección de ejemplo)</span>hola@novatech.example</span>
             </li>
             <li>
               <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
               <span><span class="contact__label">Ubicación</span>Quito, Ecuador</span>
             </li>
+            <li>
+              <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.4a3 3 0 0 0-.8-2.3c2.7-.3 5.6-1.3 5.6-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.6 2.6 5.6 2.9 5.6 2.9a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.2 9.3c0 4.6 2.8 5.6 5.5 6a3 3 0 0 0-.8 2.2V21"/></svg></span>
+              <span><span class="contact__label">Código del proyecto</span><a class="contact__link" href="https://github.com/jhairceli9-crypto/novatech-solutions" target="_blank" rel="noopener">github.com/jhairceli9-crypto <span class="sr-only">(se abre en una pestaña nueva)</span></a></span>
+            </li>
           </ul>
         </div>
 
         <form class="form reveal" id="contactForm" novalidate aria-describedby="formNotice">
-          <p class="form__notice" id="formNotice">
-            <strong>Formulario de demostración.</strong> Comprueba que los datos estén bien escritos, pero <strong>no envía mensajes</strong> porque este sitio no tiene un servicio de correo conectado.
-          </p>
+          <div class="form__notice" id="formNotice">
+            <span class="form__notice-tag">Demo</span>
+            <p><strong>Formulario de demostración.</strong> Revisa que los datos estén bien escritos, pero <strong>no envía mensajes</strong>: este sitio todavía no tiene un servicio de correo conectado.</p>
+          </div>
+          <p class="form__legend">Los campos marcados con <span class="req" aria-hidden="true">*</span><span class="sr-only">asterisco</span> son obligatorios.</p>
+
           <div class="form__row">
             <div class="form__field">
-              <label for="nombre">Nombre</label>
+              <label for="nombre">Nombre <span class="req" aria-hidden="true">*</span></label>
               <input type="text" id="nombre" name="nombre" autocomplete="name" required aria-describedby="nombre-error">
               <small class="form__error" id="nombre-error" aria-live="polite"></small>
             </div>
             <div class="form__field">
-              <label for="correo">Correo electrónico</label>
+              <label for="correo">Correo electrónico <span class="req" aria-hidden="true">*</span></label>
               <input type="email" id="correo" name="correo" autocomplete="email" inputmode="email" required aria-describedby="correo-error">
               <small class="form__error" id="correo-error" aria-live="polite"></small>
             </div>
           </div>
-          <div class="form__field">
-            <label for="servicio">Servicio de interés</label>
-            <select id="servicio" name="servicio">
-              <option>Desarrollo web y de software</option>
-              <option>Soluciones en la nube</option>
-              <option>Ciberseguridad</option>
-              <option>Aún no lo sé</option>
-            </select>
+          <div class="form__row">
+            <div class="form__field">
+              <label for="empresa">Empresa <span class="optional">(opcional)</span></label>
+              <input type="text" id="empresa" name="empresa" autocomplete="organization">
+            </div>
+            <div class="form__field">
+              <label for="servicio">Servicio de interés</label>
+              <select id="servicio" name="servicio">
+                <option>Desarrollo web y de software</option>
+                <option>Soluciones en la nube</option>
+                <option>Ciberseguridad</option>
+                <option>Aún no lo sé</option>
+              </select>
+            </div>
           </div>
           <div class="form__field">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required aria-describedby="mensaje-error"></textarea>
-            <small class="form__error" id="mensaje-error" aria-live="polite"></small>
+            <label for="mensaje">Mensaje <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="mensaje" name="mensaje" rows="5" maxlength="600" required aria-describedby="mensaje-error mensaje-count"></textarea>
+            <div class="form__meta">
+              <small class="form__error" id="mensaje-error" aria-live="polite"></small>
+              <small class="form__count" id="mensaje-count">0 / 600</small>
+            </div>
           </div>
-          <button type="submit" class="btn btn--primary btn--lg btn--full">Probar formulario (demo)</button>
-          <p class="form__success" id="formSuccess" role="status" hidden></p>
+          <button type="submit" class="btn btn--primary btn--lg btn--full">Revisar mensaje (demo)</button>
+          <div class="form__success" id="formSuccess" role="status" tabindex="-1" hidden></div>
         </form>
       </div>
     </section>
@@ -289,27 +420,27 @@
       </div>
       <nav class="footer__col" aria-label="Pie de página">
         <h2 class="footer__title">Navegación</h2>
-        <a href="#inicio">Inicio</a>
         <a href="#servicios">Servicios</a>
-        <a href="#nosotros">Cómo trabajamos</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#proceso">Proceso</a>
         <a href="#contacto">Contacto</a>
       </nav>
       <div class="footer__col">
         <h2 class="footer__title">Servicios</h2>
-        <a href="#servicios">Desarrollo web y de software</a>
-        <a href="#servicios">Soluciones en la nube</a>
-        <a href="#servicios">Ciberseguridad</a>
+        <a href="#servicio-web">Desarrollo web y de software</a>
+        <a href="#servicio-nube">Soluciones en la nube</a>
+        <a href="#servicio-seguridad">Ciberseguridad</a>
       </div>
       <div class="footer__col">
         <h2 class="footer__title">Proyecto</h2>
-        <a href="https://github.com/jhairceli9-crypto/novatech-solutions" target="_blank" rel="noopener">Código en GitHub</a>
+        <a href="https://github.com/jhairceli9-crypto/novatech-solutions" target="_blank" rel="noopener">Código en GitHub <span class="sr-only">(se abre en una pestaña nueva)</span><span aria-hidden="true">↗</span></a>
         <span>HTML5, CSS3 y JavaScript</span>
         <span>Sin frameworks</span>
       </div>
     </div>
     <div class="container footer__bottom">
       <p>© <span id="year">2026</span> NovaTech Solutions. Empresa ficticia, proyecto de portafolio.</p>
-      <a href="#inicio" class="footer__top">Volver arriba ↑</a>
+      <a href="#inicio" class="footer__top">Volver arriba <span aria-hidden="true">↑</span></a>
     </div>
   </footer>
 

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nav = document.getElementById("nav");
   const toggle = document.getElementById("navToggle");
   const navItems = nav.querySelectorAll("a");
-  const mobileQuery = window.matchMedia("(max-width: 860px)");
+  const mobileQuery = window.matchMedia("(max-width: 960px)"); // igual que en styles.css
 
   /* ---------- Menú móvil accesible ---------- */
   const backdrop = document.createElement("div");
@@ -115,7 +115,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ---------- "Consultar este servicio" preselecciona el servicio en el formulario ---------- */
+  /* ---------- Filtro de proyectos por categoría ---------- */
+  const filterButtons = document.querySelectorAll(".filter");
+  const projects = document.querySelectorAll(".project");
+  const filterStatus = document.getElementById("filterStatus");
+
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const category = btn.dataset.filter;
+      // Marca el botón elegido (aria-pressed lo anuncia a los lectores de pantalla)
+      filterButtons.forEach((b) => {
+        const active = b === btn;
+        b.classList.toggle("is-active", active);
+        b.setAttribute("aria-pressed", String(active));
+      });
+      // Muestra solo los proyectos de esa categoría
+      let visible = 0;
+      projects.forEach((p) => {
+        const show = category === "todos" || p.dataset.category === category;
+        p.hidden = !show;
+        if (show) { p.classList.add("is-visible"); visible++; }
+      });
+      filterStatus.textContent = `Mostrando ${visible} ${visible === 1 ? "proyecto" : "proyectos"}.`;
+    });
+  });
+
+  /* ---------- Botones "Consultar" y "Quiero algo así" preseleccionan el servicio en el formulario ---------- */
   const serviceSelect = document.getElementById("servicio");
   document.querySelectorAll("[data-service]").forEach((link) => {
     link.addEventListener("click", () => { serviceSelect.value = link.dataset.service; });
@@ -151,21 +176,39 @@ document.addEventListener("DOMContentLoaded", () => {
     input.addEventListener("blur", () => { if (input.value.trim()) validate(input); });
   });
 
-  let hideTimer;
+  /* Contador de caracteres del mensaje */
+  const message = document.getElementById("mensaje");
+  const counter = document.getElementById("mensaje-count");
+  const max = Number(message.getAttribute("maxlength"));
+  const updateCount = () => {
+    const n = message.value.length;
+    counter.textContent = `${n} / ${max}`;
+    counter.classList.toggle("is-near", n >= max * 0.9); // se pone amarillo cerca del límite
+  };
+  message.addEventListener("input", updateCount);
+
   form.addEventListener("submit", (e) => {
-    e.preventDefault(); // No hay servidor: nunca se envía nada
+    e.preventDefault(); // DEMOSTRACIÓN: no hay servicio de correo conectado, nunca se envía nada
     const results = [...required].map(validate);
     if (results.includes(false)) {
       success.hidden = true;
       form.querySelector("[aria-invalid='true']").focus();
       return;
     }
+
+    // Resumen de lo que se HABRÍA enviado (textContent: el texto del usuario nunca se interpreta como HTML)
     const name = form.nombre.value.trim().split(/\s+/)[0];
-    success.textContent = `Gracias, ${name}. Los datos están correctos, pero este es un formulario de demostración: no se envió ningún mensaje.`;
+    success.replaceChildren();
+    const title = document.createElement("strong");
+    title.textContent = `Todo en orden, ${name}.`;
+    const detail = document.createElement("p");
+    detail.textContent = `Tu consulta sobre «${form.servicio.value}» está bien escrita. Como este formulario es de demostración, no se envió ningún mensaje.`;
+    success.append(title, detail);
     success.hidden = false;
+    success.focus(); // lleva la vista (y el lector de pantalla) a la confirmación
+
     form.reset();
-    clearTimeout(hideTimer);
-    hideTimer = setTimeout(() => (success.hidden = true), 8000);
+    updateCount();
   });
 
   /* ---------- Año actual en el pie de página ---------- */
