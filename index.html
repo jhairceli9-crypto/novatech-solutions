@@ -3,17 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NovaTech Solutions: desarrollo de software, nube y ciberseguridad para empresas que quieren crecer.">
-  <meta name="theme-color" content="#0b1f3a">
-  <title>NovaTech Solutions</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234fc3f7'/%3E%3Cpath d='M9 24V8l14 16V8' fill='none' stroke='%23071428' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <title>NovaTech Solutions | Desarrollo web, nube y ciberseguridad</title>
+  <meta name="description" content="NovaTech Solutions (proyecto de portafolio): desarrollo de software, soluciones en la nube y ciberseguridad explicados de forma clara para pequeñas y medianas empresas.">
+  <meta name="theme-color" content="#0B1220">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://jhairceli9-crypto.github.io/novatech-solutions/">
+
+  <!-- Vista previa al compartir el enlace (WhatsApp, redes sociales) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NovaTech Solutions">
+  <meta property="og:description" content="Sitio web de portafolio: desarrollo de software, nube y ciberseguridad para empresas.">
+  <meta property="og:url" content="https://jhairceli9-crypto.github.io/novatech-solutions/">
+  <meta property="og:locale" content="es_EC">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563EB'/%3E%3Cpath d='M9 24V8l14 16V8' fill='none' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <!-- Una sola familia tipográfica variable = una sola descarga -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Marca que JavaScript está activo: así las animaciones solo ocultan contenido si JS funciona -->
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
-  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <!-- ===== Encabezado y navegación ===== -->
   <header class="header" id="header">
@@ -26,7 +41,7 @@
         <span class="logo__text">Nova<strong>Tech</strong></span>
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
 
@@ -34,7 +49,7 @@
         <ul class="nav__list">
           <li><a href="#inicio" class="nav__link">Inicio</a></li>
           <li><a href="#servicios" class="nav__link">Servicios</a></li>
-          <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+          <li><a href="#nosotros" class="nav__link">Cómo trabajamos</a></li>
           <li><a href="#contacto" class="nav__link">Contacto</a></li>
         </ul>
         <a href="#contacto" class="btn btn--primary btn--sm nav__cta">Hablemos</a>
@@ -42,151 +57,219 @@
     </div>
   </header>
 
-  <main>
-    <!-- ===== Hero ===== -->
-    <section class="hero" id="inicio">
-      <div class="hero__glow" aria-hidden="true"></div>
+  <main id="contenido" tabindex="-1">
+    <!-- ===== Portada (hero) ===== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
       <div class="container hero__inner">
         <div class="hero__content">
-          <p class="eyebrow reveal">Tecnología para empresas en crecimiento</p>
-          <h1 class="hero__title reveal">Construimos el software que <span class="accent">impulsa</span> tu negocio</h1>
-          <p class="hero__text reveal">En NovaTech Solutions diseñamos aplicaciones, migramos tu infraestructura a la nube y protegemos tus datos, con un equipo que entiende tus objetivos.</p>
+          <p class="badge reveal"><span class="badge__dot" aria-hidden="true"></span>Software · Nube · Ciberseguridad</p>
+          <h1 class="hero__title reveal" id="hero-title">Tecnología clara para que tu empresa <span class="accent">crezca sin complicaciones</span></h1>
+          <p class="hero__text reveal">Creamos sitios y aplicaciones web, ordenamos tu información en la nube y te ayudamos a protegerla. Te explicamos cada paso en un lenguaje sencillo, sin tecnicismos innecesarios.</p>
           <div class="hero__actions reveal">
-            <a href="#servicios" class="btn btn--primary">Ver servicios <svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-4 4 4-4 4"/></svg></a>
-            <a href="#contacto" class="btn btn--ghost">Solicitar asesoría</a>
+            <a href="#contacto" class="btn btn--primary btn--lg">Cuéntanos tu proyecto <svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-4 4 4-4 4"/></svg></a>
+            <a href="#servicios" class="btn btn--ghost btn--lg">Ver servicios</a>
           </div>
+          <ul class="hero__points reveal" aria-label="Lo que ofrecemos">
+            <li>Diseño adaptado a celulares</li>
+            <li>Código ordenado y documentado</li>
+            <li>Buenas prácticas de seguridad</li>
+          </ul>
         </div>
 
+        <!-- Ilustración decorativa (no contiene datos reales) -->
         <div class="hero__visual reveal" aria-hidden="true">
-          <div class="panel">
-            <div class="panel__bar"><i></i><i></i><i></i></div>
-            <div class="panel__row"><span class="panel__label">Disponibilidad</span><span class="panel__value">99,9 %</span></div>
-            <div class="panel__meter"><span style="--w: 96%"></span></div>
-            <div class="panel__row"><span class="panel__label">Despliegues este mes</span><span class="panel__value">128</span></div>
-            <div class="panel__chart">
-              <span style="--h: 40%"></span><span style="--h: 62%"></span><span style="--h: 48%"></span>
-              <span style="--h: 75%"></span><span style="--h: 58%"></span><span style="--h: 88%"></span><span style="--h: 70%"></span>
+          <div class="code-card">
+            <div class="code-card__bar">
+              <i></i><i></i><i></i>
+              <span class="code-card__file">tu-proyecto.js</span>
             </div>
+<pre class="code-card__body"><code><span class="t-key">const</span> proyecto = {
+  cliente: <span class="t-str">"Tu empresa"</span>,
+  objetivo: <span class="t-str">"Vender más en línea"</span>,
+  servicios: [<span class="t-str">"web"</span>, <span class="t-str">"nube"</span>, <span class="t-str">"seguridad"</span>],
+  responsive: <span class="t-bool">true</span>,
+};
+
+<span class="t-fn">lanzar</span>(proyecto); <span class="t-com">// ¡listo para crecer!</span></code></pre>
           </div>
           <div class="chip chip--a">
             <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
-            Datos protegidos
+            Seguridad desde el inicio
           </div>
           <div class="chip chip--b">
-            <span class="chip__dot"></span>
-            Nube activa
+            <svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+            Listo para móviles
           </div>
         </div>
       </div>
     </section>
 
     <!-- ===== Servicios ===== -->
-    <section class="section" id="servicios">
+    <section class="section" id="servicios" aria-labelledby="servicios-title">
       <div class="container">
         <header class="section__head reveal">
           <p class="eyebrow">Servicios</p>
-          <h2 class="section__title">Soluciones a la medida de tu empresa</h2>
-          <p class="section__text">Tres áreas en las que combinamos experiencia técnica y acompañamiento cercano.</p>
+          <h2 class="section__title" id="servicios-title">Tres formas de impulsar tu negocio</h2>
+          <p class="section__text">Elige el servicio que necesitas hoy. Si no estás seguro, te ayudamos a decidir en una conversación inicial.</p>
         </header>
 
         <div class="cards">
           <article class="card reveal">
-            <span class="card__num" aria-hidden="true">01</span>
             <div class="card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 5l-3 14"/></svg>
             </div>
-            <h3 class="card__title">Desarrollo de software</h3>
-            <p class="card__text">Aplicaciones web y móviles rápidas, seguras y fáciles de usar, construidas con tecnologías modernas.</p>
-            <a href="#contacto" class="card__link">Saber más <span aria-hidden="true">→</span></a>
+            <h3 class="card__title">Desarrollo web y de software</h3>
+            <p class="card__text">Sitios web y aplicaciones que se ven bien en cualquier pantalla y son fáciles de usar para tus clientes.</p>
+            <ul class="card__list">
+              <li>Páginas web corporativas y tiendas</li>
+              <li>Sistemas internos a la medida</li>
+              <li>Diseño responsive y accesible</li>
+            </ul>
+            <a href="#contacto" class="card__link" data-service="Desarrollo web y de software">Consultar este servicio <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="card reveal">
-            <span class="card__num" aria-hidden="true">02</span>
             <div class="card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .6-7.96A6 6 0 0 0 6.1 9.2 4.4 4.4 0 0 0 7 18z"/></svg>
             </div>
             <h3 class="card__title">Soluciones en la nube</h3>
-            <p class="card__text">Migración, servidores y copias de seguridad en la nube para que tu sistema esté disponible siempre.</p>
-            <a href="#contacto" class="card__link">Saber más <span aria-hidden="true">→</span></a>
+            <p class="card__text">Lleva tus archivos y sistemas a la nube para trabajar desde cualquier lugar sin perder información.</p>
+            <ul class="card__list">
+              <li>Migración de datos y servidores</li>
+              <li>Copias de seguridad automáticas</li>
+              <li>Correo y herramientas colaborativas</li>
+            </ul>
+            <a href="#contacto" class="card__link" data-service="Soluciones en la nube">Consultar este servicio <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="card reveal">
-            <span class="card__num" aria-hidden="true">03</span>
             <div class="card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
             </div>
             <h3 class="card__title">Ciberseguridad</h3>
-            <p class="card__text">Auditorías, protección de redes y capacitación para mantener tu información lejos de amenazas.</p>
-            <a href="#contacto" class="card__link">Saber más <span aria-hidden="true">→</span></a>
+            <p class="card__text">Revisamos los puntos débiles de tu red y enseñamos a tu equipo a evitar los riesgos más comunes.</p>
+            <ul class="card__list">
+              <li>Revisión de seguridad de la red</li>
+              <li>Contraseñas y accesos seguros</li>
+              <li>Capacitación contra fraudes en línea</li>
+            </ul>
+            <a href="#contacto" class="card__link" data-service="Ciberseguridad">Consultar este servicio <span aria-hidden="true">→</span></a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== Sobre nosotros ===== -->
-    <section class="section section--alt" id="nosotros">
+    <!-- ===== Cómo trabajamos ===== -->
+    <section class="section section--alt" id="nosotros" aria-labelledby="nosotros-title">
       <div class="container about">
         <div class="about__content reveal">
-          <p class="eyebrow">Sobre nosotros</p>
-          <h2 class="section__title">Un equipo joven con visión de largo plazo</h2>
-          <p class="section__text">NovaTech Solutions nació para acercar la tecnología de nivel empresarial a negocios de todos los tamaños. Trabajamos de forma transparente, con entregas cortas y comunicación constante.</p>
+          <p class="eyebrow">Cómo trabajamos</p>
+          <h2 class="section__title" id="nosotros-title">Un proceso simple, sin sorpresas</h2>
+          <p class="section__text">Creemos que la tecnología debe entenderse. Por eso trabajamos por etapas cortas: siempre sabrás qué se está haciendo y por qué.</p>
           <ul class="checklist">
-            <li>Acompañamiento desde la idea hasta el lanzamiento</li>
-            <li>Soporte técnico continuo y documentado</li>
-            <li>Precios claros, sin sorpresas</li>
+            <li>Te explicamos las opciones antes de empezar</li>
+            <li>Ves avances reales en cada etapa</li>
+            <li>Recibes documentación para tu equipo</li>
           </ul>
+          <p class="note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+            <span>NovaTech Solutions es una empresa <strong>ficticia</strong> creada como proyecto de portafolio de desarrollo web.</span>
+          </p>
         </div>
 
-        <div class="stats">
-          <div class="stat reveal"><span class="stat__num" data-count="120">0</span><span class="stat__plus">+</span><p>Proyectos entregados</p></div>
-          <div class="stat reveal"><span class="stat__num" data-count="45">0</span><span class="stat__plus">+</span><p>Clientes activos</p></div>
-          <div class="stat reveal"><span class="stat__num" data-count="8">0</span><p>Años de experiencia</p></div>
-          <div class="stat reveal"><span class="stat__num" data-count="24">0</span><span class="stat__plus">/7</span><p>Soporte disponible</p></div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">01</span>
+            <h3 class="step__title">Escuchamos</h3>
+            <p>Conversamos sobre tu negocio, tus objetivos y el problema que quieres resolver.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">02</span>
+            <h3 class="step__title">Proponemos</h3>
+            <p>Te presentamos un plan claro con etapas, tiempos estimados y alcance.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">03</span>
+            <h3 class="step__title">Construimos</h3>
+            <p>Desarrollamos por partes y te mostramos cada avance para que opines.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">04</span>
+            <h3 class="step__title">Acompañamos</h3>
+            <p>Entregamos, capacitamos a tu equipo y seguimos disponibles para ajustes.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Llamada a la acción ===== -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-band__box reveal">
+          <div>
+            <h2 class="cta-band__title" id="cta-title">¿Tienes una idea en mente?</h2>
+            <p>Cuéntanos qué necesitas y te ayudamos a convertirla en un plan concreto.</p>
+          </div>
+          <div class="cta-band__actions">
+            <a href="#contacto" class="btn btn--light btn--lg">Empezar conversación</a>
+            <a href="https://github.com/jhairceli9-crypto/novatech-solutions" class="btn btn--outline-light btn--lg" target="_blank" rel="noopener">Ver código en GitHub</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ===== Contacto ===== -->
-    <section class="section" id="contacto">
+    <section class="section" id="contacto" aria-labelledby="contacto-title">
       <div class="container contact">
         <div class="contact__info reveal">
           <p class="eyebrow">Contacto</p>
-          <h2 class="section__title">Cuéntanos tu proyecto</h2>
-          <p class="section__text">Te respondemos en menos de 24 horas hábiles.</p>
+          <h2 class="section__title" id="contacto-title">Cuéntanos tu proyecto</h2>
+          <p class="section__text">Escríbenos qué necesitas: un sitio web, mover tu información a la nube o revisar la seguridad de tu empresa.</p>
           <ul class="contact__list">
-            <li><span class="contact__label">Correo</span>hola@novatech.example</li>
-            <li><span class="contact__label">Teléfono</span>+593 99 000 0000</li>
-            <li><span class="contact__label">Oficina</span>Quito, Ecuador</li>
+            <li>
+              <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <span><span class="contact__label">Correo (ejemplo)</span>hola@novatech.example</span>
+            </li>
+            <li>
+              <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+              <span><span class="contact__label">Ubicación</span>Quito, Ecuador</span>
+            </li>
           </ul>
         </div>
 
-        <form class="form reveal" id="contactForm" novalidate>
-          <div class="form__field">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
-            <small class="form__error" aria-live="polite"></small>
-          </div>
-          <div class="form__field">
-            <label for="correo">Correo electrónico</label>
-            <input type="email" id="correo" name="correo" autocomplete="email" required>
-            <small class="form__error" aria-live="polite"></small>
+        <form class="form reveal" id="contactForm" novalidate aria-describedby="formNotice">
+          <p class="form__notice" id="formNotice">
+            <strong>Formulario de demostración.</strong> Comprueba que los datos estén bien escritos, pero <strong>no envía mensajes</strong> porque este sitio no tiene un servicio de correo conectado.
+          </p>
+          <div class="form__row">
+            <div class="form__field">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required aria-describedby="nombre-error">
+              <small class="form__error" id="nombre-error" aria-live="polite"></small>
+            </div>
+            <div class="form__field">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" autocomplete="email" inputmode="email" required aria-describedby="correo-error">
+              <small class="form__error" id="correo-error" aria-live="polite"></small>
+            </div>
           </div>
           <div class="form__field">
             <label for="servicio">Servicio de interés</label>
             <select id="servicio" name="servicio">
-              <option>Desarrollo de software</option>
+              <option>Desarrollo web y de software</option>
               <option>Soluciones en la nube</option>
               <option>Ciberseguridad</option>
-              <option>Otro</option>
+              <option>Aún no lo sé</option>
             </select>
           </div>
           <div class="form__field">
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-            <small class="form__error" aria-live="polite"></small>
+            <textarea id="mensaje" name="mensaje" rows="4" required aria-describedby="mensaje-error"></textarea>
+            <small class="form__error" id="mensaje-error" aria-live="polite"></small>
           </div>
-          <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
-          <p class="form__success" id="formSuccess" role="status" hidden>¡Gracias! Recibimos tu mensaje y te contactaremos pronto.</p>
+          <button type="submit" class="btn btn--primary btn--lg btn--full">Probar formulario (demo)</button>
+          <p class="form__success" id="formSuccess" role="status" hidden></p>
         </form>
       </div>
     </section>
@@ -196,31 +279,37 @@
   <footer class="footer">
     <div class="container footer__grid">
       <div class="footer__brand">
-        <a href="#inicio" class="logo logo--sm"><span class="logo__text">Nova<strong>Tech</strong> Solutions</span></a>
-        <p>Software, nube y ciberseguridad para empresas que quieren crecer.</p>
+        <a href="#inicio" class="logo logo--sm" aria-label="NovaTech Solutions, ir al inicio">
+          <span class="logo__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="32" height="32"><path d="M6 26V6l20 20V6" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="logo__text">Nova<strong>Tech</strong> Solutions</span>
+        </a>
+        <p>Software, nube y ciberseguridad explicados de forma sencilla para empresas que quieren crecer.</p>
       </div>
       <nav class="footer__col" aria-label="Pie de página">
-        <h4>Navegación</h4>
+        <h2 class="footer__title">Navegación</h2>
         <a href="#inicio">Inicio</a>
         <a href="#servicios">Servicios</a>
-        <a href="#nosotros">Nosotros</a>
+        <a href="#nosotros">Cómo trabajamos</a>
         <a href="#contacto">Contacto</a>
       </nav>
       <div class="footer__col">
-        <h4>Servicios</h4>
-        <a href="#servicios">Desarrollo de software</a>
+        <h2 class="footer__title">Servicios</h2>
+        <a href="#servicios">Desarrollo web y de software</a>
         <a href="#servicios">Soluciones en la nube</a>
         <a href="#servicios">Ciberseguridad</a>
       </div>
       <div class="footer__col">
-        <h4>Contacto</h4>
-        <span>hola@novatech.example</span>
-        <span>+593 99 000 0000</span>
-        <span>Quito, Ecuador</span>
+        <h2 class="footer__title">Proyecto</h2>
+        <a href="https://github.com/jhairceli9-crypto/novatech-solutions" target="_blank" rel="noopener">Código en GitHub</a>
+        <span>HTML5, CSS3 y JavaScript</span>
+        <span>Sin frameworks</span>
       </div>
     </div>
     <div class="container footer__bottom">
-      <p>© <span id="year"></span> NovaTech Solutions. Empresa ficticia con fines académicos.</p>
+      <p>© <span id="year">2026</span> NovaTech Solutions. Empresa ficticia, proyecto de portafolio.</p>
+      <a href="#inicio" class="footer__top">Volver arriba ↑</a>
     </div>
   </footer>
 
@@ -228,6 +317,6 @@
     <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15V5m-4 4 4-4 4 4"/></svg>
   </a>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
