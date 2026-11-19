@@ -1,0 +1,25 @@
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Dependencias y compilados (por si se agregan en el futuro)
+node_modules/
+dist/
+
+# Secretos y archivos privados: NUNCA subir
+.env
+.env.*
+*.pem
+*.p12
+*.key
+*.password
+client_secret*.json
+
+# Registros
+*.log
